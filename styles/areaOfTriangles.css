@@ -1,0 +1,93 @@
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header > div.navigator > a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+header > div.navigator > a:hover {
+  background-color: pink;
+}
+
+body.main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  background-color: aquamarine;
+  justify-content: space-between;
+  background-image: url(../assets/bg.jpg);
+}
+
+section.section-body {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+section.section-body > form {
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+input.input-text {
+  height: 20px;
+  width: 120px;
+  border-radius: 20px;  
+  border: none;
+  border: 2px solid pink;
+  padding: 12px;
+}
+
+label.input-label > p {
+  font-size: 18px;
+}
+
+section.section-body > img {
+  width: 500px;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  background-color: pink;
+  border: none;
+  height: 40px;
+  width: 100px;
+  color: white;
+  border-radius: 20px;
+}
+
+footer {
+  width: 40%;
+  min-width: 300px;
+  height: 10%;
+  border-radius: 20px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  section.section-body {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section.section-body > img {
+    width: 100%;
+  }
+}

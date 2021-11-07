@@ -174,6 +174,7 @@ formEle.addEventListener("submit", (e) => {
 });
 
 resetBtn.addEventListener("click", () => {
+  // reset type is used to reset the form
   questionContainer.forEach((div) => {
     div.style.backgroundColor = "inherit";
   });
